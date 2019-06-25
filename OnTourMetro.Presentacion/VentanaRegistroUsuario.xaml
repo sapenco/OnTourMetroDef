@@ -1,0 +1,22 @@
+﻿<Controls:MetroWindow x:Class="OnTourMetro.Presentacion.VentanaRegistroUsuario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:OnTourMetro.Presentacion"
+        mc:Ignorable="d"
+        Title="VentanaRegistroUsuario" Height="567" Width="450" WindowTitleBrush="#FF6589EA">
+    <Grid Background="#FFC5C5BD">
+        <Image Height="160" Margin="140,30,136,0" VerticalAlignment="Top" Source="Imagenes/NewUser.png"/>
+        <TextBox x:Name="txtNombreNuevoUsuario" Height="23" Margin="66,309,66,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Controls:TextBoxHelper.Watermark="Introduzca el nombre de usuario" BorderBrush="Black"/>
+        <TextBox x:Name="txtNombreUsuario" HorizontalAlignment="Left" Height="23" Margin="66,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Controls:TextBoxHelper.Watermark="Introduzca su nombre " BorderBrush="Black"/>
+        <TextBox x:Name="txtApellidoPaternoUsuario" HorizontalAlignment="Left" Height="23" Margin="66,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Controls:TextBoxHelper.Watermark="Introduzca su apellido" BorderBrush="Black"/>
+        <PasswordBox x:Name="psbContrasenaNuevoUsuario" HorizontalAlignment="Left" Margin="66,340,0,0" VerticalAlignment="Top" Width="310" Controls:TextBoxHelper.Watermark="Introduzca su contraseña" BorderBrush="Black"/>
+        
+        <Controls:Tile x:Name="Tile_Guardar" Margin="231,417,66,86" Height="Auto" Width="145" Background="#FF6589EA" Content="Guardar" Foreground="Black" FontSize="20" Click="Tile_Guardar_Click"/>
+        <Controls:Tile x:Name="Tile_Cancelar" Height="Auto" Margin="66,417,231,86" Width="145" Background="#FF6589EA" Content="Cancelar" FontSize="20" Foreground="Black" Click="Tile_Cancelar_Click"></Controls:Tile>
+        <TextBox x:Name="txtApellidoMaternoUsuario" HorizontalAlignment="Left" Height="23" Margin="66,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Controls:TextBoxHelper.Watermark="Introduzca su apellido" BorderBrush="Black"/>
+
+    </Grid>
+</Controls:MetroWindow>

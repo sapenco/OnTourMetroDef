@@ -1,0 +1,31 @@
+﻿<Controls:MetroWindow x:Class="OnTourMetro.Presentacion.MenuPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:OnTourMetro.Presentacion"
+        mc:Ignorable="d"
+        Title="On Tour - Menu Principal" Height="497" Width="840" Background="#FF6589EA" WindowTitleBrush="#FF6589EA">
+    <Grid Background="#FFC5C5BD" Margin="0,0,2,0">
+        <Controls:Tile x:Name="tlRecaudacion" Margin="10,205,0,0" Title="Recaudación" Background="#FF6589EA" Foreground="Black" FontWeight="Bold" Width="260" Height="251" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" TitleFontSize="20" Click="TlRecaudacion_Click">
+            <Image Source="Imagenes/recaudacion.png" Height="215" Width="250" Cursor="Arrow"></Image>
+        </Controls:Tile>
+        <Controls:Tile x:Name="tlCuenta" Margin="10,10,0,0" Title="Cuenta" Background="#FF6589EA" Foreground="Black" FontWeight="Bold" Height="170" Width="260" HorizontalAlignment="Left" VerticalAlignment="Top" TitleFontSize="20" Click="TlCuenta_Click">
+            <Image Source="Imagenes/User.png" Height="105" Width="170" Cursor="Arrow"></Image>
+        </Controls:Tile>
+        <Controls:Tile x:Name="tlCerrarsesion"  Title="Cerrar sesion" Background="#FF6589EA" Foreground="Black" FontWeight="Bold" Margin="650,270,0,0" Height="186" Width="170" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Click="TlCerrarsesion_Click" TitleFontSize="20">
+            <Image Source="Imagenes/Close.png" Height="123" Width="140" Cursor="Arrow"></Image>
+        </Controls:Tile>
+        <Controls:Tile x:Name="tlContrato" Title="Contrato" Background="#FF6589EA" Foreground="Black" FontWeight="Bold" Height="235" Margin="300,10,0,0" Width="215" Click="TlContrato_Click" HorizontalAlignment="Left" VerticalAlignment="Top" TitleFontSize="20">
+            <Image Source="Imagenes/Contract.png" Height="165" Width="199"></Image>
+        </Controls:Tile>
+        <Controls:Tile x:Name="tlClientes" Title="Clientes" Background="#FF6589EA" Foreground="Black" FontWeight="Bold" Height="225" Margin="540,20,0,0" Width="280" Click="TlClientes_Click" HorizontalAlignment="Left" VerticalAlignment="Top" TitleFontSize="20">
+            <Image Source="Imagenes/Client.png" Height="165" Width="199"></Image>
+        </Controls:Tile>
+        <Controls:Tile x:Name="tlRegistroUsuarios" Title="Registro Usuarios" Background="#FF6589EA" Foreground="Black" FontWeight="Bold" Height="186" Margin="300,270,0,0" Width="325" HorizontalAlignment="Left" VerticalAlignment="Top" TitleFontSize="20" Click="TlRegistroUsuarios_Click">
+            <Image Source="Imagenes/NewUser.png" Height="135" Width="230"></Image>
+        </Controls:Tile>
+
+    </Grid>
+</Controls:MetroWindow>

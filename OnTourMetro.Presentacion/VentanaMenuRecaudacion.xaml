@@ -1,0 +1,42 @@
+﻿<Controls:MetroWindow x:Class="OnTourMetro.Presentacion.VentanaMenuRecaudacion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:OnTourMetro.Presentacion"
+        mc:Ignorable="d"
+        Title="VentanaMenuRecaudacion" Height="402" Width="429" WindowTitleBrush="#FF6589EA">
+    <Grid Background="#FFC5C5BD">
+        <Controls:Tile x:Name="Tile_InformacionDelUsuario" Margin="20,170,0,0" Width="155" Height="180" Foreground="Black" FontWeight="Bold" Title="Clientes" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF6589EA">
+            <Image Height="100" Width="100" Source="Imagenes/UserInfo.png"/>
+        </Controls:Tile>
+        <Controls:Tile x:Name="Tile_Recaudacion" Margin="251,20,0,0" Width="155" Height="180" Foreground="Black" FontWeight="Bold" Title="Recaudación" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF6589EA" Click="Tile_Recaudacion_Click">
+            <Image Height="105" Width="114" Source="Imagenes/Bank.png"/>
+        </Controls:Tile>
+        <Controls:Tile x:Name="Tile_Depositar" Margin="20,20,0,0" Width="216" Height="135" Title="Depositar" Foreground="Black" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF6589EA" Click="Tile_Depositar_Click">
+            <Image Height="100" Width="100" Source="Imagenes/AddCash.png"/>
+        </Controls:Tile>
+        <Controls:Tile x:Name="Tile_Volver" Margin="190,215,0,0" Width="216" Height="135" Click="Tile_Volver_Click" FontWeight="Bold" Foreground="Black" Title="Volver" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF6589EA">
+            <Image Height="100" Width="100" Source="Imagenes/Logout.png"/>
+        </Controls:Tile>
+        <Controls:Flyout x:Name="flyDeposito" Margin="0,0,0,146" Width="421" Header="Deposito" Foreground="White">
+            <Controls:Flyout.Background>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Controls:Flyout.Background>
+            <Canvas>
+                <ComboBox x:Name="cmbColegio" Canvas.Left="10" Canvas.Top="20" Width="195" BorderBrush="Black" Controls:TextBoxHelper.Watermark="Seleccione un colegio"/>
+                <ComboBox x:Name="cmbCurso" Canvas.Left="10" Canvas.Top="64" Width="195" BorderBrush="Black" Controls:TextBoxHelper.Watermark="Seleccione un Curso"/>
+                <TextBox x:Name="txtMontoDeposito" Height="26" Canvas.Left="230" TextWrapping="Wrap" Canvas.Top="20" Width="181" BorderBrush="Black" Controls:TextBoxHelper.Watermark="Introduzca el monto."/>
+                <Controls:Tile x:Name="Tile_AceptarDeposito" Height="26" Canvas.Left="230" Margin="0" Canvas.Top="114" Width="181" Content="Aceptar" FontSize="18" Foreground="Black" FontWeight="Bold" Click="Tile_AceptarDeposito_Click">
+                    <Controls:Tile.Background>
+                        <SolidColorBrush Color="#FF6589EA" Opacity="1.5"/>
+                    </Controls:Tile.Background>
+                </Controls:Tile>
+                <TextBox x:Name="txtCorreoElectronico" Height="26" Canvas.Left="230" TextWrapping="Wrap" Canvas.Top="64" Width="181" BorderBrush="Black" Controls:TextBoxHelper.Watermark="Introduzca el correo."/>
+
+            </Canvas>
+        </Controls:Flyout>
+
+    </Grid>
+</Controls:MetroWindow>
